@@ -1,0 +1,183 @@
+.myBox {
+	
+    margin: 5px;
+    border: 0px solid #ffffff;
+    color: #ffffff;
+    width: 200px;
+    padding: 20px;
+    text-align: left;
+    background-color: #999;
+    border:3px solid #fff;
+	
+}
+
+
+
+.stylishFont {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+}
+
+.stylishFont_white {
+	color:#FFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+}
+
+.stylishTitle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 22pt;
+	font-weight: bold;
+}
+
+.stylishFoot {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: #666;
+}
+
+a.ex:link {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	text-decoration: none;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #333;
+	color: #000;
+}
+
+a.ex:active {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	text-decoration: none;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #333;
+	color: #FFF;
+}
+
+a.ex:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	text-decoration: none;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #333;
+	color: #000;
+}
+
+a.ex:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	text-decoration: none;
+	border-bottom-color: #666;
+	color: #FFF;
+}
+
+a.note:link {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	text-decoration: none;
+	color: #FFF;
+}
+
+a.note:active {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	text-decoration: none;
+	color: #FFF;
+}
+
+a.note:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	text-decoration: none;
+	color: #FFF;
+}
+
+a.note:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	text-decoration: none;
+	border-bottom-width: 2px;
+	border-bottom-style: dotted;
+	border-bottom-color: #FFF;	
+	color: #FFF;
+}
+
+a.pro:link {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14pt;
+	text-decoration: none;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #333;
+	color: #000;
+}
+
+a.pro:active {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14pt;
+	text-decoration: none;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #333;
+	color: #FFF;
+}
+
+a.pro:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14pt;
+	text-decoration: none;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #333;
+	color: #000;
+}
+
+a.pro:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14pt;
+	text-decoration: none;
+	color: #900;
+}
+
+
+
+.top {
+	background-image: url(top.jpg);
+	background-repeat: no-repeat;
+}
+
+/*------------------CYCLED DIV----------------------------*/
+
+.promote img{
+	height: 96px;
+	width: 96x;
+	padding:0;
+	margin:0;
+	overflow: hidden;
+	vertical-align: middle;
+ } 
+
+.promote div {			/* for cycled DIV version */
+	valign:top;			/* [Parent] DIV container = .promote in css */
+	color:#000000;		/* [Child] cycled DIV = div in css */
+	padding:0;
+	margin:0;
+ }
+.promote label{		/* for cycled LABEL version */
+	valign:top;
+	color:#000000;
+	padding:0;
+	margin:0;
+	font-size: 14pt;
+	font-family: Arial, Helvetica, sans-serif;
+	width:600px;
+ }
+ .promote {
+	left: 5px;
+	top:90px;
+	height:100px;
+	width:600px;
+}

@@ -1,0 +1,53 @@
+<html>
+<title>Clozer</title>
+<head>
+<link href="/site_media/css_FAST.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<table width=50% align="center" borader=0>
+	<tr>
+	<td><img src="/site_media/banner2.png"> <font color='#999999' class='stylishFont'>(ver 0.3)</font></td>
+	</tr>
+	<tr>
+	  <td align='right'>
+      {{ myet|safe}}
+      <br><br>
+      </td>
+  </tr>
+</table>
+
+
+
+<form action='/answer/' method='post'>
+  <table width="45%" border="0" align="center" class='stylishFont'>
+    <tr>
+      <td colspan="3"><br>{{ text }}<br><br><br></td>
+    </tr>
+
+    {% for keyno, dis, ans, dis_item in data %}  
+    <tr>
+      <td>{{ keyno }}</td>
+      <td nowrap="nowrap">{{ dis }}</td>
+    <td><input type="text" value="0" name='answer_user' size="1"></td>
+    	<input type="hidden" value= {{ ans }} name="ans">
+    </tr>
+	{% endfor %}
+  
+  	<tr>
+  	  <td colspan="3"><br>
+  	  <input type=submit value="Check the answer!"> 
+  	  </td>
+  	</tr>
+  	
+    <tr>
+    <td colspan="3">
+      <div align='center' id='credit'>
+         <br><br><br><font color=grey size=3>2010 (c) NTHU NLPLAB</font><br><br>
+      </div>
+    </td>
+    </tr>
+  
+  </table>
+</form>
+</body>
+</html>
