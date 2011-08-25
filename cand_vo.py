@@ -1,7 +1,10 @@
 import sqlite3
 
+import os
+ROOT_PATH=os.path.dirname(__file__)
+
 def vo(v,n=1):
-    db=sqlite3.connect("vo.db")
+    db=sqlite3.connect(os.path.join(ROOT_PATH,"vo.db"))
     cursor = db.cursor()
     v=v.replace("'","''")
     
