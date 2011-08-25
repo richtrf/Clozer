@@ -15,7 +15,7 @@ ROOT_PATH=os.path.dirname(__file__)
 
 import random
 import simplejson as json
-elist=json.loads(open('entrance_verb.txt').read())
+elist=json.loads(open(os.path.join(ROOT_PATH,'entrance_verb.txt')).read())
 hverb=['have', 'do', 'know','think','get', 'go','see','say' ,'come','make','take','look','give','find','use']
 
 
