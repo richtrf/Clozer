@@ -10,11 +10,14 @@
 #    
 #    return inflected_word
 
-#import os
+import os
+ROOT_PATH=os.path.dirname(__file__)
+
+
 import sqlite3
 def inflected(word, lemma, target="v"):
     inflected_word=lemma
-    db=sqlite3.connect("inflect.db")
+    db=sqlite3.connect(os.path.join(ROOT_PATH,"inflect.db"))
     cursor = db.cursor()
     word=word.replace("'","''")
     lemma=lemma.replace("'","''")
