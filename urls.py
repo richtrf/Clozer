@@ -12,7 +12,7 @@ urlpatterns = patterns('',
     (r'^site_media/(?P<path>.*)$', 'django.views.static.serve',
                  {'document_root': settings.STATIC_PATH}),
 	
-    (r'^$', 'cloze.index'),
+    (r'^$', 'index.index'),
     (r'^distractor/', 'distractor.index'),
     (r'^answer/', 'answer.index'),
         

@@ -9,6 +9,10 @@ from inflect import inflected
 from vnco_db import vncheck
 from cand_vo import vo
 
+import os
+ROOT_PATH=os.path.dirname(__file__)
+
+
 import random
 import simplejson as json
 elist=json.loads(open('entrance_verb.txt').read())

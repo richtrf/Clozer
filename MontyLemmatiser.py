@@ -4,10 +4,15 @@ __version__="2.0"
 import re
 import MontyUtils
 
+import os
+ROOT_PATH=os.path.dirname(__file__)
+
+
 class MontyLemmatiser:
     path_prefix=''
     xtag_morph_english_corpus=path_prefix+'xtag_morph_english.txt'
     exceptions_file="LEMMAEXCEPTIONS.MDF"
+
     regular_any=[]
     regular_verb=[]
     regular_noun=[]
@@ -61,7 +66,8 @@ class MontyLemmatiser:
         hostname_cleaned=self.exceptions_db
         c=self.setitem
         buffers=MontyUtils.MontyUtils().find_file(self.exceptions_file)
-        pathname_str=open(buffers,'r')
+        pathname_str=open(os.path.join(ROOT_PATH,'LEMMAEXCEPTIONS.MDF'),'r')
+        #pathname_str=open(buffers,'r')
         cd_cleaned=map(lambda the_tokenizer_str:the_tokenizer_str.split(),pathname_str.read().split('\n'))
         pathname_str.close()
         map(lambda the_tokenizer_str:c(hostname_cleaned,the_tokenizer_str[0]+'/'+the_tokenizer_str[1],the_tokenizer_str[2]),cd_cleaned)
